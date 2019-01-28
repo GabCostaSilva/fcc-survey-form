@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+</head>
+<body>
+  <h1 id="title">Survey</h1>
+  <p id="description">A little survey to know our users better</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name</label>
+    <input id="name" type="text" placeholder="Full Name" required>
+    <label for="email" id="email-label">Email</label>
+    <input id="email" type="email" placeholder="Email" required>
+    <label for="number" id="number-label">Age</label>
+    <input id="number" type="number" min="10" max="100" placeholder="Age" required>
+    <fieldset>
+      <legend>What best describes your curret role:</legend>
+      <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="full-time">Full Time Job</option>
+        <option value="part-time">Part Time Job</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend this site to a friend?</legend>
+      <input type="radio" name="role" value="recommend-yes">For Sure!
+      <input type="radio" name="role" value="recommend-maybe">Possibly.
+      <input type="radio" name="role" value="recommend-no">No Way!
+    </fieldset>
+    <fieldset>
+      <legend>What you think it should be improved. (Check all that apply):</legend>
+      <input type="checkbox" name="front-projects" value="front-proj">Front-end Projects
+      <input type="checkbox" name="back-projects" value="back-proj">Back-end Projects
+      <input type="checkbox" name="challenges" value="challenges">Challenges
+      <input type="checkbox" name="data-viz" value="data-viz">Data Visualization
+      <input type="checkbox" name="forum" value="forum">Forum
+    </fieldset>
+    <fieldset>
+      <legend>Comments or suggestions?</legend>
+      <textarea>
+
+      </textarea>
+    </fieldset>
+    <input type="submit" id="submit">
+  </form>
+
+</body>
+</html>
