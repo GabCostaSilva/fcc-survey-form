@@ -1,0 +1,65 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-width: 260px;
+  text-align: center;
+  background: rgb(152, 251, 152)
+}
+
+#title {
+  font-family: 'Poiret One', cursive;
+}
+
+.wraper {
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+  border: white 10px solid;
+}
+
+#survey-form {
+  display: grid;
+  grid-gap: 50px;
+  height: 800px;
+}
+#survey-form fieldset{
+  border: none;
+}
+
+#survey-form legend {
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+#submit {
+  margin: 0 auto;
+  grid-column: 1/3;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: rgba(60, 150, 200, .8);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+legend, label {
+  grid-column: 1;
+}
+
+input, select {
+  grid-column: 2;
+}
+
+textarea {
+  vertical-align: top;
+  grid-column: 2
+}
+
+input[id="email"], input[id="number"], input[id="name"] {
+  border: none;
+  text-decoration: none;
+}
+
