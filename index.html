@@ -14,7 +14,7 @@
   <h1 id="title">Survey</h1>
   <div class="wraper">
     <p id="description">A little survey to know our users better</p>
-    <form id="survey-form">
+    <form id="survey-form" class="container">
       <label for="name" id="name-label">Name</label>
       <input id="name" type="text" placeholder="Full Name" required>
       <label for="email" id="email-label">Email</label>
@@ -31,19 +31,29 @@
       </select>
 
       <label for="role" id="role-label">Would recommend us to a friend?</label>
-      <div>
+      <div id="radio">
         <input type="radio" name="role" value="recommend-yes">For Sure!
         <input type="radio" name="role" value="recommend-maybe">Possibly.
         <input type="radio" name="role" value="recommend-no">No Way!
       </div>
 
       <label for="suggestions" id="suggestion-label">What do you think we could develop better in the future?</label>
-      <div>
-        <input type="checkbox" name="suggestions" value="front-proj">Front-end Projects
-        <input type="checkbox" name="suggestions" value="back-proj">Back-end Projects
-        <input type="checkbox" name="suggestions" value="challenges">Challenges
-        <input type="checkbox" name="suggestions" value="data-viz">Data Visualization
-        <input type="checkbox" name="suggestions" value="forum">Forum
+      <div id="checkbox">
+        <div>
+          <input type="checkbox" name="suggestions" value="front-proj">Front-end Projects
+        </div>
+        <div>
+          <input type="checkbox" name="suggestions" value="back-proj">Back-end Projects
+        </div>
+        <div>
+          <input type="checkbox" name="suggestions" value="challenges">Challenges
+        </div>
+        <div>
+          <input type="checkbox" name="suggestions" value="data-viz">Data Visualization
+        </div>
+        <div>
+          <input type="checkbox" name="suggestions" value="forum">Forum
+        </div>
       </div>
       <p id="textarea-label">Any comments or suggestions?</p>
       <textarea form="survey-form"></textarea>

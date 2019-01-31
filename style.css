@@ -5,23 +5,36 @@ body {
   background: rgb(152, 251, 152)
 }
 
+p, legend, label {
+  text-align: start;
+}
+
+#description {
+  text-align: center;
+}
+
 #title {
   font-family: 'Poiret One', cursive;
 }
 
 .wraper {
   background: white;
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   border: white 10px solid;
+  box-shadow: 2px 2px 20px 1px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
 }
 
 #survey-form {
-  display: grid;
-  grid-gap: 50px;
   height: 800px;
 }
-#survey-form fieldset{
+
+#survey-form fieldset {
   border: none;
 }
 
@@ -45,12 +58,30 @@ body {
   text-transform: uppercase;
 }
 
-legend, label {
-  grid-column: 1;
+#submit:hover {
+  animation-name: btn-anim;
+  animation-timing-function: linear;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
 }
 
-input, select {
+legend, label {
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+input, #dropdown, #radio, #checkbox {
   grid-column: 2;
+  align-self: center;
+}
+
+#checkbox {
+  text-align: start;
+}
+
+#checkbox input {
+  display: inline;
 }
 
 textarea {
@@ -63,3 +94,11 @@ input[id="email"], input[id="number"], input[id="name"] {
   text-decoration: none;
 }
 
+@keyframes btn-anim {
+  100% {
+    background-color: rgba(80, 170, 220, .8);
+    /* border: solid 1px rgb(40, 85, 110, .8); */
+    box-shadow: 5px 5px 10px 1px darkgrey;
+    transform: scale(.95);
+  }
+}
